@@ -1,0 +1,51 @@
+.footer {
+  justify-content: space-between;
+  background-color: $brown;
+  color: white;
+  display: flex;
+  overflow: hidden;
+
+  .copy {
+    font-size: 1.1rem;
+    line-height: 100px;
+  }
+
+  .connect {
+
+    .connect-text {
+      line-height: 100px;
+    }
+    &__list {
+      display: inline;
+      li.connect-link {
+        display: inline;
+
+        a {
+          color: white;
+          font-size: 1.4rem;
+          padding-left: 5px;
+          position: relative;
+          text-decoration: none;
+          top: 1px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    flex-direction: column;
+    .copy, .connect {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .copy {
+      padding-left: 30px;
+    }
+    .connect {
+      padding-right: 30px;
+    }
+  }
+}

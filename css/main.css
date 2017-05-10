@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Josefin Sans', sans-serif; }
+
+section {
+  padding: 30px; }
+
+.title {
+  color: #987e63;
+  margin-bottom: 10px; }
+
+.article-text {
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.5rem; }
+
+.content-row {
+  position: relative;
+  width: 100%; }
+
+.main-nav {
+  background-color: #241e1e;
+  display: flex;
+  justify-content: flex-end;
+  height: 58px;
+  width: 100%; }
+  .main-nav .logo {
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 2px;
+    line-height: 58px;
+    padding: 0 38px;
+    position: absolute;
+    text-decoration: none;
+    top: 0; }
+  .main-nav .main-menu {
+    display: none;
+    padding-right: 28px; }
+    .main-nav .main-menu__item {
+      display: inline;
+      line-height: 58px;
+      padding: 0 10px; }
+      .main-nav .main-menu__item a {
+        color: #bba996;
+        text-decoration: none;
+        transition: color .5s; }
+        .main-nav .main-menu__item a:hover {
+          color: white; }
+
+@media screen and (min-width: 600px) {
+  .main-nav .main-menu {
+    display: block; } }
+
+.main-photo {
+  background-image: url("/img/main-photo.jpg");
+  background-size: cover;
+  color: white;
+  height: calc(100vh - 58px);
+  width: 100%; }
+  .main-photo .main-title {
+    font-family: 'EB Garamond', serif;
+    font-size: 4.5rem;
+    padding-top: 30vh;
+    text-align: center; }
+  .main-photo .slogan {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%; }
+
+.welcome-section .welcome-title {
+  font-size: 1.4rem; }
+
+.youtube-section {
+  background-color: #efefef; }
+  .youtube-section .youtube-title {
+    font-size: 1.3rem; }
+  .youtube-section .embed-video {
+    display: block;
+    text-align: center;
+    vertical-align: top; }
+  .youtube-section .videos-list {
+    display: block; }
+    .youtube-section .videos-list__link-list li.video-link {
+      list-style: none;
+      padding-top: 25px;
+      position: relative; }
+      .youtube-section .videos-list__link-list li.video-link .link-date {
+        color: #777;
+        font-size: .8rem;
+        position: absolute;
+        top: 10px; }
+      .youtube-section .videos-list__link-list li.video-link a {
+        color: #987e63;
+        font-size: 1.2rem;
+        text-decoration: none; }
+  @media screen and (max-width: 767px) {
+    .youtube-section .videos-list {
+      margin-top: 30px; } }
+  @media screen and (min-width: 768px) {
+    .youtube-section .embed-video {
+      display: inline-block;
+      width: 55%; }
+    .youtube-section .videos-list {
+      display: inline-block;
+      width: 45%; } }
+
+.footer {
+  justify-content: space-between;
+  background-color: #987e63;
+  color: white;
+  display: flex;
+  overflow: hidden; }
+  .footer .copy {
+    font-size: 1.1rem;
+    line-height: 100px; }
+  .footer .connect .connect-text {
+    line-height: 100px; }
+  .footer .connect__list {
+    display: inline; }
+    .footer .connect__list li.connect-link {
+      display: inline; }
+      .footer .connect__list li.connect-link a {
+        color: white;
+        font-size: 1.4rem;
+        padding-left: 5px;
+        position: relative;
+        text-decoration: none;
+        top: 1px; }
+  @media screen and (max-width: 599px) {
+    .footer {
+      flex-direction: column; }
+      .footer .copy, .footer .connect {
+        display: block;
+        text-align: center;
+        width: 100%; } }
+  @media screen and (min-width: 600px) {
+    .footer .copy {
+      padding-left: 30px; }
+    .footer .connect {
+      padding-right: 30px; } }

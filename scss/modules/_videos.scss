@@ -1,0 +1,51 @@
+.youtube-section {
+  background-color: $light-gray;
+
+  .youtube-title {
+    font-size: 1.3rem;
+  }
+
+  .embed-video {
+    display: block;
+    text-align: center;
+    vertical-align: top;
+  }
+  .videos-list {
+    display: block;
+
+    &__link-list {
+      li.video-link {
+        list-style: none;
+        padding-top: 25px;
+        position: relative;
+
+        .link-date {
+          color: $dark-gray;
+          font-size: .8rem;
+          position: absolute;
+          top: 10px;
+        }
+        a {
+          color: $brown;
+          font-size: 1.2rem;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .videos-list {
+      margin-top: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .embed-video {
+      display: inline-block;
+      width: 55%;
+    }
+    .videos-list {
+      display: inline-block;
+      width: 45%;
+    }
+  }
+}

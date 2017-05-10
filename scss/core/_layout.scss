@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Josefin Sans', sans-serif;
+}
+section {
+  padding: 30px;
+}
+.title {
+  color: $brown;
+  margin-bottom: 10px;
+}
+.article-text {
+  color: $text;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.content-row {
+  position: relative;
+  width: 100%;
+}
