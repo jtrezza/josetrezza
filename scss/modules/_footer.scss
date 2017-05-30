@@ -3,7 +3,13 @@
   background-color: $brown;
   color: white;
   display: flex;
+  margin: auto;
+  max-width: 960px;
   overflow: hidden;
+
+  &__container {
+    background-color: $brown;
+  }
 
   .copy {
     font-size: 1.1rem;

@@ -7,7 +7,7 @@
 
   .embed-video {
     display: block;
-    text-align: center;
+    text-align: left;
     vertical-align: top;
   }
   .videos-list {
@@ -21,9 +21,9 @@
 
         .link-date {
           color: $dark-gray;
-          font-size: .8rem;
+          font-size: .9rem;
           position: absolute;
-          top: 10px;
+          top: 9px;
         }
         a {
           color: $brown;
@@ -41,11 +41,11 @@
   @media screen and (min-width: 768px) {
     .embed-video {
       display: inline-block;
-      width: 55%;
+      width: 50%;
     }
     .videos-list {
       display: inline-block;
-      width: 45%;
+      width: 50%;
     }
   }
 }

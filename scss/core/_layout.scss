@@ -3,8 +3,15 @@
   margin: 0;
   padding: 0;
 }
+a {
+  color: $brown;
+
+  &:visited {
+    color: $brown;
+  }
+}
 body{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: Raleway, sans-serif;
 }
 section {
   padding: 30px;
@@ -12,13 +19,26 @@ section {
 .title {
   color: $brown;
   margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 950px;
 }
 .article-text {
-  color: $text;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Average;
+  font-size: 21px;
+  line-height: 1.58;
+  max-width: 950px;
+  margin: auto;
+}
+.last-videos-paragraph {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  line-height: 1.58;
+  padding-bottom: 8px;
 }
 .content-row {
   position: relative;
-  width: 100%;
+  max-width: 950px;
+  margin: auto;
 }

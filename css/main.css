@@ -1,28 +1,47 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Average");
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
+a {
+  color: #987e63; }
+  a:visited {
+    color: #987e63; }
+
 body {
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: Raleway, sans-serif; }
 
 section {
   padding: 30px; }
 
 .title {
   color: #987e63;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 950px; }
 
 .article-text {
-  color: #333;
-  font-size: 1.2rem;
-  line-height: 1.5rem; }
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Average;
+  font-size: 21px;
+  line-height: 1.58;
+  max-width: 950px;
+  margin: auto; }
+
+.last-videos-paragraph {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  line-height: 1.58;
+  padding-bottom: 8px; }
 
 .content-row {
   position: relative;
-  width: 100%; }
+  max-width: 950px;
+  margin: auto; }
 
 .main-nav {
   background-color: #241e1e;
@@ -85,7 +104,7 @@ section {
     font-size: 1.3rem; }
   .youtube-section .embed-video {
     display: block;
-    text-align: center;
+    text-align: left;
     vertical-align: top; }
   .youtube-section .videos-list {
     display: block; }
@@ -95,9 +114,9 @@ section {
       position: relative; }
       .youtube-section .videos-list__link-list li.video-link .link-date {
         color: #777;
-        font-size: .8rem;
+        font-size: .9rem;
         position: absolute;
-        top: 10px; }
+        top: 9px; }
       .youtube-section .videos-list__link-list li.video-link a {
         color: #987e63;
         font-size: 1.2rem;
@@ -108,17 +127,21 @@ section {
   @media screen and (min-width: 768px) {
     .youtube-section .embed-video {
       display: inline-block;
-      width: 55%; }
+      width: 50%; }
     .youtube-section .videos-list {
       display: inline-block;
-      width: 45%; } }
+      width: 50%; } }
 
 .footer {
   justify-content: space-between;
   background-color: #987e63;
   color: white;
   display: flex;
+  margin: auto;
+  max-width: 960px;
   overflow: hidden; }
+  .footer__container {
+    background-color: #987e63; }
   .footer .copy {
     font-size: 1.1rem;
     line-height: 100px; }
